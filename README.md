@@ -5,7 +5,7 @@ Shallow ANN (1 hidden layer, 32 ReLU units) that predicts mean daily temperature
 - **Stack:** Python, scikit-learn (`MLPRegressor`), FastAPI, Uvicorn
 - **Dataset:** [Daily Delhi Climate (Kaggle)](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data) — place `DailyDelhiClimateTrain.csv` in `data/`
 - **Features:** humidity, wind speed, mean pressure, month → **target:** mean temperature (°C)
-- **Metrics:** see `model/metrics.json` after training (MAE / RMSE / R²) — <!-- paste numbers here -->
+- **Metrics:** see `model/metrics.json` after training (MAE / RMSE / R²) — mae=2.027, rmse=2.683, r2=0.865, <!-- paste numbers here -->
 
 ## Run
 
