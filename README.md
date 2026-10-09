@@ -18,7 +18,7 @@ Evaluated on a held-out 20% test split:
 
 | MAE (°C) | RMSE (°C) | R² |
 |---|---|---|
-| **X.XX** | **X.XX** | **0.XX** |
+| **2.027** | **2.683** | **0.865** |
 
 <!-- Replace X's with the values from model/metrics.json -->
 
@@ -66,9 +66,6 @@ curl -X POST http://127.0.0.1:8000/predict \
 ```
 Inputs are validated with Pydantic (e.g. humidity 0–100, month 1–12); invalid requests return a `422` error.
 
-## Screenshot
-![Swagger UI](docs/swagger.png)
-<!-- Take a screenshot of /docs, save it as docs/swagger.png -->
 
 ## Future improvements
 - Add lag features / time-series model (LSTM) for forecasting
